@@ -8,6 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FrontDesk.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/UIScene.unity
+    guid: 32f209ccb9bfa6442a2ae4551d5ba65b
+  - enabled: 1
+    path: Assets/Scenes/Pizza.unity
+    guid: 828d99f548089dd44a5b9af45cb09e2d
+  - enabled: 1
+    path: Assets/Scenes/Cauldren.unity
+    guid: a3944b55c526b0a408fe9be2355a9f70
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
