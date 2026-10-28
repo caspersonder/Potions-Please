@@ -46,6 +46,7 @@ public class MixPizza : MonoBehaviour
     IEnumerator loadNewScene()
     {
         yield return new WaitForSeconds(timeBeforeSceneSwap);
+        CostumerScript.Instance.makePizza();
         SceneManager.LoadScene(mixNewSceneName);
     }
 }

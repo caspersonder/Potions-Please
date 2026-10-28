@@ -46,6 +46,7 @@ public class MixIngredients : MonoBehaviour
     IEnumerator loadNewScene()
     {
         yield return new WaitForSeconds(timeBeforeSceneSwap);
+        CostumerScript.Instance.makePotion();
         SceneManager.LoadScene(mixNewSceneName);
     }
 }
