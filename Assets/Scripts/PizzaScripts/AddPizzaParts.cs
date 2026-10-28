@@ -12,9 +12,9 @@ public class AddPizzaParts : MonoBehaviour
     
     public enum ingredients
     {
-        Carrot,
-        Egg,
-        Skull
+        Sauce,
+        Peperoni,
+        Cheese
     }
     
     [HideInInspector] public new List<ingredients> ingreTypeList = new List<ingredients>();
@@ -26,24 +26,24 @@ public class AddPizzaParts : MonoBehaviour
         currentIngreList = GameObject.Find("IngredientsList").GetComponent<TextMeshProUGUI>();
         currentIngreList.text= " ";
         
-        ingreButtons.Add(GameObject.Find("CarrotButton").GetOrAddComponent<Button>());
-        ingreButtons.Add(GameObject.Find("EggButton").GetOrAddComponent<Button>());
-        ingreButtons.Add(GameObject.Find("SkullButton").GetOrAddComponent<Button>());
+        ingreButtons.Add(GameObject.Find("SauceButton").GetOrAddComponent<Button>());
+        ingreButtons.Add(GameObject.Find("PeperoniButton").GetOrAddComponent<Button>());
+        ingreButtons.Add(GameObject.Find("CheeseButton").GetOrAddComponent<Button>());
     }
 
     public void addIngre1()
     {
-        ingreTypeList.Add(ingredients.Carrot);
+        ingreTypeList.Add(ingredients.Sauce);
         updateIngreList();
     }
     public void addIngre2()
     {
-        ingreTypeList.Add(ingredients.Egg);
+        ingreTypeList.Add(ingredients.Peperoni);
         updateIngreList();
     }
     public void addIngre3()
     {
-        ingreTypeList.Add(ingredients.Skull);
+        ingreTypeList.Add(ingredients.Cheese);
         updateIngreList();
     }
 
